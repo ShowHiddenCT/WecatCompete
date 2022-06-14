@@ -1,0 +1,37 @@
+<view class="header">
+  <image class="bg_ware" mode="widthFix" src="https://i.postimg.cc/ht7TCtbT/v2-f3df428131252c7e14da52d3d2fe908f-720w.jpg"></image>
+  <view class="top">
+    <view class="introduce">
+      <image class="photo" src="{{userInfo.avator}}" />
+      <view class="about">
+        <text class="userName">{{userInfo.username}}</text>
+        <view class="brief">这个人很懒，rtsdfdsfdsfs什么也没写</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="middle">
+  <view class="integral">
+    <view class="title">
+      <van-icon size="65rpx" name="https://i.postimg.cc/pT7q962t/1.png" />
+      <view>活动记录</view>
+    </view>
+    <view class="Num">
+      {{userInfo.sum}}次
+    </view>
+  </view>
+</view>
+<view class="logDetail">
+  <vtu-empty wx:if="{{!hasDate}}" class="empty" image-width="100rpx" image-height="100rpx" height="750rpx" src="https://i.postimg.cc/c1gDq0m1/image.png" label="空空的，快去参加活动吧~">
+  </vtu-empty>
+  <view wx:else class="DetailInfo">
+  <!-- <button bindtap="test">sdfsdfsdf</button> -->
+    <view wx:for="{{logArr}}" class="InfoItem">
+      <view class="DetailTitle">
+        <view class="name">{{item.activeName}}</view>
+        <view class="time">{{item.STime}}</view>
+      </view>
+      <text class="Status {{item.Status[1]}}">{{item.Status[0]}}</text>
+    </view>
+  </view>
+</view>

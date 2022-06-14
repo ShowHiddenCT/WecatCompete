@@ -1,0 +1,11 @@
+<vtu-input-group title="用户注册" v-class="container">
+    <vtu-input must title="用户名" border placeholder="请输入用户名" type="input" text-align="left" status="{{userNameStatus}}" message="{{userNameMsg}}" bind:input="getUserName" bind:blur="detectUserName">
+    </vtu-input>
+    <vtu-input must title="手机号" border placeholder="请输入手机号" message="{{phoneMsg}}" status="{{phoneStatus}}" type="input" text-align="left" input-type="number" bindinput="getPhone" bind:blur="detectPhone">
+    </vtu-input>
+    <vtu-input must title="密码" must border placeholder="请输入密码" type="input" text-align="left" status="{{pwdStatus}}" input-type="password" message="{{pwdMsg}}" bindinput="getPassword" bind:blur="detectPwd">
+    </vtu-input>
+    <vtu-input title="个人简介" border placeholder="请输入个人简介" value="" type="textarea" text-align="left" text-height="100px" show-max-label="{{true}}" maxlength="300" v-class="in" bindinput="getIntroduce"></vtu-input>
+</vtu-input-group>
+<vtu-btn wx:if="{{loading}}" loading loading-text="注册中" bind:click="register" type="success" custom-class="dialog-btn" v-class="register">注册</vtu-btn>
+<vtu-btn wx:else bind:click="register" type="success" custom-class="dialog-btn" v-class="register">注册</vtu-btn>

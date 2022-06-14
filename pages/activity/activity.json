@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "vtu-empty": "/miniprogram_npm/vtuweapp/empty/vtu-empty"
+  },
+  "navigationBarTitleText": "我的活动"
+}

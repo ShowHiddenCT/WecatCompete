@@ -1,0 +1,13 @@
+.container{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+.in{
+    position: relative;
+}
+.register{
+    position: absolute;
+    top: 55%;
+    left: 25%;
+}

@@ -1,0 +1,46 @@
+<view class="v1">
+
+    <!-- v2父容器  子view使用绝对布局 -->
+    <view class="v2">
+        <view class="dltext">登录</view>
+
+        <!-- 账号 -->
+        <view class="phoneCs">
+            <image src="/img/zhanghao.png" class="ph"></image>
+            <input bindinput="getPhone" placeholder="请输入手机号" />
+        </view>
+
+        <!-- 密码 -->
+        <view class=passwordCs">
+            <image src="/img/password.png" class="ps"></image>
+            <input  bindinput="getPassWord" placeholder="请输入密码" password="{{isPassword}}"/>
+            <image bindtap="eyeOpen" src="/img/eye.png" class="eye"></image>
+        </view>
+
+        <!-- 注册-->
+        <view class="zhuce">
+            <navigator></navigator>
+            <navigator url="../register/register">立即注册</navigator>
+        </view>
+
+        <!-- 登录按钮 -->
+        <view class="denglu">
+            <button bindtap="login" class="btn-dl" type="primary">登录</button>
+        </view>
+
+        <!-- 协议区  xieyi -->
+        <view class="xieyi">
+            <checkbox bindtap="chooseCheck" checked="{{isCheck}}" class="isXY"></checkbox>
+            <view class="text-xy">同意小程序的《使用协议》</view>
+        </view>
+    </view>
+
+    <!-- 提示框  -->
+    <view class="v3">
+        <view class="line"></view>
+    </view>
+    <view class="footer">
+        <text>Copyright © 2022 zzz. All Rights Reserved.</text>
+        <text>zz公司 版权所有</text>
+    </view>
+</view>

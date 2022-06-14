@@ -1,0 +1,62 @@
+<view class="header">
+  <image class="bg_ware" mode="widthFix" src="https://i.postimg.cc/ht7TCtbT/v2-f3df428131252c7e14da52d3d2fe908f-720w.jpg"></image>
+  <view class="top">
+    <view class="introduce">
+      <image bindtap="ChooseChange" class="photo" src="{{userInfo.avator}}" />
+      <view class="about">
+        <text class="name">{{userInfo.username}}</text>
+        <text class="brief">{{userInfo.introduction}}</text>
+      </view>
+    </view>
+
+  </view>
+</view>
+<view class="middle">
+  <view class="LV">
+    <view class="specNum">
+      <view class="spec">
+        <view class="LVnum">LV {{userInfo.Lv}}</view>
+        <view class="exper">{{userInfo.exp}}/1000</view>
+      </view>
+      <van-progress pivot-text=" " color="#f2826a" percentage="{{per}}" stroke-width="6" />
+    </view>
+    <view class="LVBackImg">
+      <image src="https://i.postimg.cc/YCk8mgwj/image.png" mode="aspectFit" />
+    </view>
+  </view>
+</view>
+<view class="Funs">
+  <view class="Fun">
+    <view bindtap="navigateIntegral" class="ButtonIcon">
+      <van-icon size="55rpx" name="https://i.postimg.cc/G3WXdV7F/2.png" />
+      <view>我的积分</view>
+    </view>
+    <view class="ButtonIcon borderleft">
+      <van-icon size="50rpx" name="https://i.postimg.cc/RVwXFdyj/image.png" />
+      <view>积分商城</view>
+    </view>
+  </view>
+  <view class="Fun">
+    <view class="ButtonIcon">
+      <van-icon size="55rpx" name="https://i.postimg.cc/pT7q962t/1.png" />
+      <view>我的活动</view>
+    </view>
+    <view class="ButtonIcon borderleft">
+      <van-icon size="65rpx" name="https://i.postimg.cc/1XqMDrtV/3.png" />
+      <view>全部订单</view>
+    </view>
+  </view>
+
+
+
+
+</view>
+
+<view class="bottom">
+  <view class="BottomTitle">常用功能</view>
+  <vtu-grids col="4">
+    <vtu-grid label="地址管理" img-src="https://i.postimg.cc/Hxj6kg12/1.png" font-size="24rpx" img-width="50rpx" img-height="50rpx"></vtu-grid>
+    <vtu-grid label="意见反馈" img-src="https://i.postimg.cc/qRtGdx2D/image.png" font-size="24rpx" img-width="50rpx" img-height="50rpx"></vtu-grid>
+    <vtu-grid label="设置" img-src="https://i.postimg.cc/FKHZT4z4/1.png" font-size="24rpx" img-width="60rpx" img-height="60rpx"></vtu-grid>
+  </vtu-grids>
+</view>

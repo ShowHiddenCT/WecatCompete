@@ -1,0 +1,26 @@
+{
+    "pages": [
+      "pages/login/login",
+      "pages/index/index",
+      "pages/register/register",
+      "pages/integral/integral",
+      "pages/activity/activity",
+      "pages/store/store"
+    ],
+    "usingComponents": {
+      "van-button": "@vant/weapp/button/index",
+      "van-image": "@vant/weapp/image/index",
+      "vtu-input": "/miniprogram_npm/vtuweapp/input/item/vtu-input",
+      "van-icon": "@vant/weapp/icon/index",
+      "van-cell": "@vant/weapp/cell/index",
+      "van-cell-group": "@vant/weapp/cell-group/index"
+
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json"
+}
